@@ -1,5 +1,6 @@
-# Secure Browser with Admin Dashboard - Setup Instructions
-
+# Custom Browser for PICT - Setup Instructions
+## About
+This project implements a secure browser environment with website blocking capabilities. The browser allows administrators to maintain a blacklist of websites and domains that should be restricted. When users attempt to access a blacklisted website, the browser automatically blocks access to that site. This makes it ideal for institutional use where controlled internet access is required.
 ## Project Structure
 - Frontend: PyQt5-based browser application
 - Backend: Express.js/TypeScript server with Redis and MongoDB
@@ -71,5 +72,24 @@ python main.py
 2. If Redis connection fails:
    - Verify Redis server is running
    - Check Redis connection settings in backend/.env
+
+## 📸 Screenshots
+
+### Browser Interface
+![Browser UI](Screenshots/Picture1.png)
+![Browser UI](Screenshots/Picture2.png)
+*Main browser interface*
+
+### Admin Login
+![Browser UI](Screenshots/Picture4.png)
+*Admin Login through Custom Url Scheme (pict://login)*
+
+### Admin Dashboard
+![Browser UI](Screenshots/Picture5.png)
+*Admin control panel for monitoring and managing browser activity*
+
+### URL Filtering
+![Browser UI](Screenshots/Picture3.png)
+*User can't access sites which are blocked by admin*
 
 
