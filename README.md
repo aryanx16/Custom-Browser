@@ -77,19 +77,19 @@ python main.py
 
 ### Browser Interface
 ![Browser UI](Screenshots/Picture1.png)
-![Browser UI](Screenshots/Picture2.png)
+![Browser UI](Screenshots/Picture2.png)</br>
 *Main browser interface*
 
 ### Admin Login
-![Browser UI](Screenshots/Picture4.png)
+![Browser UI](Screenshots/Picture4.png)</br>
 *Admin Login through Custom Url Scheme (pict://login)*
 
 ### Admin Dashboard
-![Browser UI](Screenshots/Picture5.png)
+![Browser UI](Screenshots/Picture5.png)</br>
 *Admin control panel for monitoring and managing browser activity*
 
 ### URL Filtering
-![Browser UI](Screenshots/Picture3.png)
+![Browser UI](Screenshots/Picture3.png)</br>
 *User can't access sites which are blocked by admin*
 
 
