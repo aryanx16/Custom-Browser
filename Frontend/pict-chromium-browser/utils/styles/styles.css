@@ -1,0 +1,144 @@
+/* ------------------------------
+   Global Defaults
+------------------------------ */
+* {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* ------------------------------
+   ToolBar
+------------------------------ */
+QToolBar {
+  background: #edf4f7;
+  border: none;
+  padding: 5px;
+}
+
+/* ------------------------------
+   QPushButton - General Style
+------------------------------ */
+QPushButton {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 4px 8px;
+  background: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+QPushButton:hover {
+  background-color: #dce9ef;
+}
+
+QPushButton:pressed {
+  background-color: #cadfe7;
+}
+
+/* Specific buttons with custom sizes if needed */
+QPushButton#ContextMenuTriggerButn,
+QPushButton#back_btn,
+QPushButton#forward_butn,
+QPushButton#reload_butn,
+QPushButton#home_button,
+QPushButton#stop_butn {
+  /* Adjust these if you need fixed sizes; otherwise, let them size to contents */
+  min-width: 32px;
+  min-height: 32px;
+}
+
+/* Hide the context menu dropdown indicator on specific button */
+QPushButton#ContextMenuTriggerButn::menu-indicator {
+  image: none;
+}
+
+/* ------------------------------
+   QMenu - General Styling
+------------------------------ */
+QMenu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1px;
+}
+
+/* Right arrow icon for submenus */
+QMenu::right-arrow {
+  image: url(resources/right-arrow-context-menu.png);
+  height: 12px;
+  width: 12px;
+}
+
+/* General QMenu items */
+QMenu::item {
+  background-color: transparent;
+  font-size: 10pt;
+  padding: 2px 2px;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+QMenu::item:selected {
+  background-color: #dedeff;
+}
+
+/* ------------------------------
+   Special Menus (Context and Help)
+------------------------------ */
+QMenu#ContextMenu,
+QMenu#HelpMenu {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+QMenu#ContextMenu::item,
+QMenu#HelpMenu::item {
+  background-color: transparent;
+  font-size: 10pt;
+  padding: 8px 40px;
+  border-radius: 4px;
+}
+
+QMenu#ContextMenu::icon,
+QMenu#HelpMenu::icon {
+  padding-left: 40px;
+}
+
+QMenu#ContextMenu::separator,
+QMenu#HelpMenu::separator {
+  height: 1px;
+  background-color: gray;
+  margin: 4px 0;
+}
+
+QMenu#ContextMenu::item:selected,
+QMenu#HelpMenu::item:selected {
+  background-color: #f2f2f2;
+}
+
+/* ------------------------------
+   QToolTip Styling
+------------------------------ */
+QToolTip {
+  background-color: #131c21;
+  color: #f1f1f1;
+  font-size: 10pt;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  opacity: 200;
+}
+
+/* ------------------------------
+   SSL Info Label
+------------------------------ */
+QLabel#SSLIcon {
+  border: 1px solid transparent;
+  padding: 0 10px;
+  border-radius: 6px;
+  /* Adjust dimensions as needed */
+  min-width: 16px;
+  min-height: 16px;
+}
